@@ -65,7 +65,7 @@
   \begin{beamercolorbox}[rounded=true,shadow=true,leftskip=1cm,colsep*=.75ex]{block title}%
     \usebeamerfont*{block title}\insertblocktitle
   \end{beamercolorbox}%
-  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  {\ifbeamercolorempty[bg]{block body}{}{\vskip-0.5pt}}%
   \usebeamerfont{block body}%
   \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=.75ex,sep=.75ex,vmode]{block body}%
     \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
@@ -80,21 +80,21 @@
 
   \begin{beamercolorbox}[wd=\paperwidth]{headline}
     \begin{columns}[T]
-      \begin{column}{.25\paperwidth}
+      \begin{column}{.22\paperwidth}
         \begin{center}
-          \includegraphics[height=8cm]{color-flush-UWlogo-print}
+          \includegraphics[height=8cm]{logos/uw.png}
         \end{center}
         \vskip1ex
       \end{column}
-      \begin{column}{.45\paperwidth}
-        \vskip4ex
+      \begin{column}{.53\paperwidth}
+        \vskip6ex
         \raggedleft
         \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
         \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
         \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
       \end{column}
-      \begin{column}{0.05\paperwidth}
-      \end{column}
+      %\begin{column}{0.05\paperwidth}
+      %\end{column}
       \begin{column}{.25\paperwidth}
         \begin{center}
           \insertlogo
