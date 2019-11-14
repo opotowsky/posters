@@ -10,7 +10,8 @@
 \addbibresource{citations.bib}
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 \renewcommand*{\bibfont}{\footnotesize}
-\setlength{\parskip}{\baselineskip}
+\usepackage[font={small,it}]{caption}
+\captionsetup{margin=20pt, labelformat=empty}
 
 \title[small title]{\texorpdfstring{Statistical Methods for Pre-detonation Nuclear Forensics Analysis}
 {Statistical Methods for Pre-detonation Nuclear Forensics Analysis}}
@@ -34,34 +35,48 @@
 
 After a nuclear weapon is detonated or nuclear material is intercepted, a
 priority for emergency responders is to determine both where it came from and
-the radioactive danger to the public. \\~\\
+the radioactive danger to the public. While the latter can be determined
+quickly, the former often involves lab work that can take days or weeks. \\~\\
 
-While the latter can be determined
-quickly, the former often involves lab work that can take days or weeks.
+This is part of a nuclear forensics investigation: attribution of a nuclear
+indicent. This informs both emergency response and what actions the government
+takes.  A strong nuclear forensics capability both deters governments from
+engaging in state-sponsored nuclear terrorism and interrupts the pathways being
+used to create weapons. \\~\\
 
-Presented here is a methodology that seeks to rapidly provide
-investigation-guiding information using measurements taken in the field
-compared against statistical models. While this work focuses on spent nuclear
-fuel (SNF) from reactors outside of regulatory control, this methodology can
-apply to any nuclear material, intact or remnants of a detonation. 
-Statistical methods may be able to determine reactor operation parameters
-faster than the traditionally utilized empirical relationships. To evaluate
-their utility in this context, a number of questions must be answered.
-
-Figure \ref{fig:itdb} blah blah.
+The figure shows the number of nuclear material incidents tracked in
+the last 25 years, of which 12 involved highly enriched uranium, 2 plutonium,
+and 4 plutonium-beryllium neutron sources.  Thus, this work focuses on spent
+nuclear fuel (SNF) from reactors outside of regulatory control as a material of
+interest. 
 
 \begin{figure}
   \fboxsep=1mm
   \fboxrule=3pt
   \fbox{\includegraphics[height=10cm]{figures/trafficking.png}}
-  \caption{138 participating countries report intercepted nuclear materials
+  \caption{Participating countries (138) report intercepted nuclear materials
            intended for illicit use to the IAEA.\cite{trafficking}}
   \label{fig:itdb}
 \end{figure}
 
+
 \end{block}
 
 \begin{block}{Background: Using statistical methods to evaluate nuclear forensics signatures}
+
+
+Presented here is a methodology that seeks to rapidly provide
+investigation-guiding information using measurements taken in the field
+compared against statistical models. 
+
+this methodology can apply to any nuclear material, intact
+or remnants of a detonation. 
+
+
+Statistical methods may be able to determine reactor operation parameters
+faster than the traditionally utilized empirical relationships. To evaluate
+their utility in this context, a number of questions must be answered.
+
 
 Nuclear forensics research initiatives include characterization of both pre-
 and post-detonation materials. Measuring isotopic ratios, chemical compounds,
@@ -88,18 +103,15 @@ Figure \ref{fig:ml-intro} is blah blah blah
 \begin{column}[T]{0.72\textwidth}
 \begin{columns}[t]
 \begin{column}{0.32\textwidth}
-\begin{block}{Methodology: Maximum likelihood estimation for prediction}
+\begin{block}{Main Research Question}
 
-Toy training set for demonstration, describe features chosen + labels of interest
-Show generic ML workflow
-MLE method chosen for measure of uncertainty 
-Include uncertainty? 
-
-Figure \ref{fig:overview} is blah blah blah
+How does the ability to determine forensic-relevant spent nuclear fuel
+attributes using machine learning techniques degrade as less information is
+available?
 
 \begin{figure}
   \includegraphics[height=20cm]{figures/overview.png}
-  \caption{Caption me}
+  \caption{Definition of terms within the main research question}
   \label{fig:overview}
 \end{figure}
 
@@ -107,9 +119,12 @@ Figure \ref{fig:overview} is blah blah blah
 \end{column}
 
 \begin{column}{0.42\textwidth}
-\begin{block}{Title1}
+\begin{block}{Methodology: Maximum likelihood estimation for prediction}
 
-Text1
+Toy training set for demonstration, describe features chosen + labels of interest
+Show generic ML workflow
+MLE method chosen for measure of uncertainty 
+Include uncertainty? 
 
 \end{block}
 \end{column}
